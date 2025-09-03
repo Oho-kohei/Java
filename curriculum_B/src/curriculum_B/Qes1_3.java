@@ -13,34 +13,38 @@ public class Qes1_3 {
 		// TODO 自動生成されたメソッド・スタブ
 
 		//1 
-	
+		int flagg = 0;
 		 Scanner scanner = new Scanner(System.in);  //Scannerで初期化
-		 String username = scanner.nextLine();//1行を読み込んで返却
+		 String username = "";
 		 String regex_username = "^[A-Za-z0-9]+$" ;
-		 
- 		 if (username == ""){
+		 do {
+			 username = scanner.nextLine();//1行を読み込んで返却
+ 		 if (username==null){
 		     System.out.println("名前を入力してください"); //条件式1を満たす場合にのみ実行する
-		 } else if (username == null){
+		 } else if (username.isEmpty()){
 		 	 System.out.println("名前を入力してください");//条件式1を満たさない、かつ、条件式2を満たす場合に実行される	
 		 } else if (username.length() >= 10) {
 			 System.out.println("名前を10文字以内にしてください");
 		 } else if (Pattern.matches("^[A-Za-z0-9]+$",username)) {	  //
 			 System.out.println("ユーザー名「"+username+"」を登録しました");
+			 flagg=1;
 		 } else {
 		     System.out.println("半角英数字のみで名前を入力してください"); 	//条件式1,2のどちらも満たさない場合に実行される
-		} 
-		
+		 } 
+		 }while(flagg==0);
 		//じゃんけん
 		String [] janken = {"グー","チョキ","パー"};
-		
+	
 		int count = 0;
 		int flag =0;
 	
-		do {
-			Random r = new Random();
-			String me = janken[r.nextInt(3)];
-			String pc = janken[r.nextInt(3)];
-			
+		Random r = new Random();
+		String me = "";
+		String pc = "";
+		
+			do {
+				 me = janken[r.nextInt(3)];
+				 pc = janken[r.nextInt(3)];
 			System.out.println(username+"の手は「"+me+"」");
 			System.out.println("相手の手は「"+pc+"」");
 	
@@ -77,7 +81,6 @@ public class Qes1_3 {
 			
 			}
 		}while (flag == 0);	
-		
 	}
 
 }

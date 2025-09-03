@@ -49,5 +49,18 @@ public class Qes7 {
 	          System.out.println(
 	            subjects[i] + "の平均点は" +formattedValued+ "点です。");
 	        }
+	    
+	    System.out.println();
+	    
+	    int cum = 0;
+	    	for (int[] score : scores) {
+	    		for (int result : score) {
+	    			cum += result;
+	    				}
+	    		}
+	    	double com	= cum / (num * 4);
+	    	String formattedvaluee = String.format("%.2f",com);
+	    	System.out.println("全体の平均点は" + formattedvaluee + "点です。");
+	    
 	}
 }
