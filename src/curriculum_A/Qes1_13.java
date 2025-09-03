@@ -36,7 +36,7 @@ public class Qes1_13 {
 		qesfloat=9.5f;
 		qesdouble=10.5d;
 		qeschar='a';
-		qesstring="ハロー";
+		qesstring="null";
 		qesboolean=true;
 		
 		
@@ -50,8 +50,10 @@ public class Qes1_13 {
 		
 		
 		//5
-		int num1=43;				
-		System.out.println("ハローJAVA"+num1);				
+		String num3 = "20";
+		int num2 = Integer.parseInt(num3);
+		int num1=23;				
+		System.out.println("ハローJAVA"+(num1+num2));				
 		
 		
 		//6
