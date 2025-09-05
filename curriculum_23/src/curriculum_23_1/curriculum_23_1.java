@@ -9,16 +9,17 @@ public class curriculum_23_1 {
 		curriculum_23_2 a = new curriculum_23_2();
 		
 		a.setName("ライオン");
-		a.getName();
+		
 		System.out.println("動物名：" + a.getName());
 	
 		a.setNagasa("2.1");
-		a.getNagasa();
+		
 		System.out.println("体長：" + a.getNagasa() + "ｍ");
 		
 		a.setHayasa("80");
-		a.getHayasa();
+
 		System.out.println("速度：" + a.getHayasa() + "km/h");
+		//・13、17、21行目のゲッター呼び出しは不要です
 	}
 
 }
