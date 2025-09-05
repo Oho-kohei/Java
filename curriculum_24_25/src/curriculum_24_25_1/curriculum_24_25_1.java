@@ -10,6 +10,7 @@ public class curriculum_24_25_1 {
 		
 	Scanner scanner = new Scanner(System.in);
 	String username = scanner.nextLine();//1行を読み込んで返却
+	scanner.close();
 	
 	curriculum_24_25_2_1 a = new curriculum_24_25_2_1();
 	
