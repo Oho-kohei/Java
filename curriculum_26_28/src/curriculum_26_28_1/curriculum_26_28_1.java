@@ -10,7 +10,6 @@ public class curriculum_26_28_1 {
 
 		Scanner scanner = new Scanner(System.in);  //Scannerで初期化
 		String []  animal = scanner.nextLine().split(",");//1行を読み込んで返却	”、”で区切った文字を読み取る
-		scanner.close();//スキャナー終わり
 		 
 		for(int i = 0; i < animal.length; i++) {
 		String[] suuzi = animal[i].split(":");
@@ -24,8 +23,11 @@ public class curriculum_26_28_1 {
 		System.out.println("速度：" + suuzi[2]+ "km/h");
 		System.out.println("学名：" + b );
 		System.out.println();
+		
+		scanner.close();//スキャナー終わり
+		
 		}
-		 }
+	 }
 	
 
 }
