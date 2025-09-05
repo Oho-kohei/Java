@@ -9,12 +9,13 @@ public class curriculum_26_28_1 {
 		// TODO 自動生成されたメソッド・スタブ
 
 		Scanner scanner = new Scanner(System.in);  //Scannerで初期化
-		 String []  animal = scanner.nextLine().split(",");//1行を読み込んで返却	”、”で区切った文字を読み取る
+		String []  animal = scanner.nextLine().split(",");//1行を読み込んで返却	”、”で区切った文字を読み取る
+		scanner.close();//スキャナー終わり
+		 
+		for(int i = 0; i < animal.length; i++) {
+		String[] suuzi = animal[i].split(":");
 		
-		 for(int i = 0; i < animal.length; i++) {
-		 String[] suuzi = animal[i].split(":");
-		
-		 curriculum_26_28_1_2 a = new curriculum_26_28_1_2();
+		curriculum_26_28_1_2 a = new curriculum_26_28_1_2();
 		 
 		String b = a.date(suuzi[0]);
 		
