@@ -20,7 +20,7 @@ public class Curriculum_New_1_18 {
 		}
 	 }
 //Q4
-	 public static void Q4(double a, double b) {
+	 public static void Q2(double a, double b) {
 		 System.out.println( a + b );
 	 }
 //Q5
@@ -55,7 +55,7 @@ public class Curriculum_New_1_18 {
 			 Q2(1,2);
 			 int[] a = {1,2,3,4,5,};
 			 Q3(a);
-			 Q4(1.1,2.1);
+			 Q2(1.1,2.1);
 			 int[]b = Q5(3); 
 			 double c = Q6(b);
 			 System.out.println(M7(c));
